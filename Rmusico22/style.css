@@ -1,0 +1,259 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url('mono.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+}
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+
+/* Dropdown menu sec */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* for logo */
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+/* For sameer's photo */
+.sameer{
+    width: 30px;
+    cursor: pointer;
+}
+
+
+/* For upper options(like: home, contact) */
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: width o.3s;
+}
+nav ul li a:hover::after{
+    width: 50%;
+}
+/* For textbox */
+.text-box{
+    color: #fff;
+    position: absolute;
+    bottom: 8%;
+}
+.text-box p{
+    font-size: 50px;
+    font-weight: 600;
+}
+.text-box h1{
+    font-size: 100px;
+    line-height: 160px;
+    margin: left -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff; 
+    background: url(images/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+/* For animations */
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+
+
+/* For textbox */
+.text-box h3{
+    font-size: 40px;
+    font-weight: 500;
+}
+.text-box .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.text-box a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+}
+.text-box a span{
+    font: size 30px;
+    line-height: 15px;
+    margin-left: 5px;
+}
+
+/* For Social network icons */
+.social-icons{
+    position: absolute;
+    right: 5%;
+    bottom: 8%;
+
+}
+.social-icons img{
+    width: 25px;
+    display: block;
+    margin: 25px 5px;
+}
+
+/* Artists sec */
+.featured-artists {
+    padding: 700px 0;
+
+  }
+  
+  .featured-artists h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .artist-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .artist-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .artist-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .artist-card p {
+    text-align: center;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1% 0;
+    background-color: #333;
+    color: #fff;
+  }
+
+   /* CSS for the email section */
+   .email-section {
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  .email-section h2 {
+    color: #333;
+  }
+  .email-section input[type="email"] {
+    width: 200px;
+    padding: 5px;
+  }
+  .email-section input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* CSS for the "homepage" link */
+  .Go-to-homepage {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .Go-to-homepage a {
+    color: #333;
+    text-decoration: none;
+  }
+
+  /* CSS for the checkbox section */
+  .checkbox-section {
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  .checkbox-section h2 {
+    color: #333;
+  }
+  .checkbox-section label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .checkbox-section label input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  /* CSS for the "Learn More" link */
+  .learn-more {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .learn-more a {
+    color: #333;
+    text-decoration: none;
+  }
